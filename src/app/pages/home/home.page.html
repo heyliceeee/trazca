@@ -1,0 +1,370 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <br>
+
+    <ion-searchbar style="margin-bottom: 5px;" placeholder="Pesquisar"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- TITLE "PROMOÇÃO DA SEMANA" -->
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <ion-text>
+          <h6 style="font-weight: bold; margin-top: 5px;">Promoção da semana</h6>
+        </ion-text>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- CARD -->
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <ion-card class="myCard" style="margin-left: -1px; margin-right: -1px; margin-top: -20px; margin-bottom: -10px;">
+          <img src="https://images.unsplash.com/photo-1457460866886-40ef8d4b42a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80">
+          
+          <div class="myOverlay">
+            <ion-row>
+              <ion-col size="8">
+                <ion-text>
+                  <h6 style="font-weight: bold; font-size: 100%; color: white; margin: 3px;">O BURGER MAIS TUGA CHEGOU!</h6>
+                </ion-text>
+
+                <ion-text>
+                  <h6 style="font-weight: lighter; font-size: 90%; color: white; margin: 3px;">Grande Hamburger Duplo</h6>
+                </ion-text>
+              </ion-col>
+
+              <ion-col size="4">
+                <ion-button class="ion-float-end" style="margin: 3px;" href="#" color="primary" size="small">EU QUERO!</ion-button>
+              </ion-col>
+            </ion-row>
+          </div>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- TITLE "SUGESTÃO DO CHEF" AND BUTTON "VER TODAS" -->
+  <ion-grid>
+    <ion-row>
+      <ion-col size="8">
+        <ion-text>
+          <h6 style="font-weight: bold;">Sugestão do Chef</h6>
+        </ion-text>
+      </ion-col>
+
+      <ion-col size="4">
+        <ion-text>
+          <h6 class="ion-float-end" style="font-size: 95%; color: #57B709;">ver todas
+            <ion-icon name="chevron-forward-outline" style="margin-left: -5px; margin-right: -10px;"></ion-icon>
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+          </h6>
+        </ion-text>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- CARDS -->
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+        <ion-card style="margin-left: -1px; margin-right: -1px; margin-top: -20px; margin-bottom: -10px;">
+          <img src="https://images.unsplash.com/photo-1644398324665-57647e829ca2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80">
+          
+          <ion-card-header style="margin-bottom: -15px;">
+            <ion-text>
+              <h6 style="font-weight: bold; font-size: 100%; color: #000000; margin-left: -10px; margin-right: -10px; margin-top: -10px; margin-bottom: -10px;">Pizza Crocante</h6>
+            </ion-text>
+
+            <ion-text>
+              <h6 style="font-weight: lighter; font-size: 90%; color: #A1A1A1; margin-left: -10px; margin-right: -10px; margin-top: 15px; margin-bottom: -1px;">Pizza Hut</h6>
+            </ion-text>
+
+            <ion-row>
+              <ion-col size="8">
+                <ion-icon name="star" style="margin-left: -15px; margin-bottom: 0px; color: #FFC90C"></ion-icon>
+                <ion-icon name="star" style="margin-bottom: 0px; color: #FFC90C"></ion-icon>
+                <ion-icon name="star" style="margin-bottom: 0px; color: #FFC90C"></ion-icon>
+                <ion-icon name="star" style="margin-bottom: 0px; color: #FFC90C"></ion-icon>
+                <ion-icon name="star" style="margin-right: -10px; margin-bottom: 0px;"></ion-icon>
+              </ion-col>
+
+              <ion-col size="4">
+                <ion-text>
+                  <h6 style="font-weight: bold; font-size: 85%; color: #57B709; margin-left: -1px; margin-right: -20px; margin-top: 1px; margin-bottom: 0px;">15,00€</h6>
+                </ion-text>
+              </ion-col>
+            </ion-row>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="6">
+        <ion-card style="margin-left: -1px; margin-right: -1px; margin-top: -20px; margin-bottom: -10px;" [routerLink]="['/tabs/restaurant']">
+          <img src="https://images.unsplash.com/photo-1550950158-d0d960dff51b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YnVyZ2VyJTIwc3RlYWtob3VzZXxlbnwwfDJ8MHx8&auto=format&fit=crop&w=400&q=60">
+          
+          <ion-card-header style="margin-bottom: -15px;" >
+            <ion-text>
+              <h6 style="font-weight: bold; font-size: 100%; color: #000000; margin-left: -10px; margin-right: -10px; margin-top: -10px; margin-bottom: -10px;">SteakHouse</h6>
+            </ion-text>
+
+            <ion-text>
+              <h6 style="font-weight: lighter; font-size: 90%; color: #A1A1A1; margin-left: -10px; margin-right: -10px; margin-top: 15px; margin-bottom: -1px;">Burger King</h6>
+            </ion-text>
+
+            <ion-row>
+              <ion-col size="8">
+                <ion-icon name="star" style="margin-left: -15px; margin-bottom: 0px; color: #FFC90C"></ion-icon>
+                <ion-icon name="star" style="margin-bottom: 0px; color: #FFC90C"></ion-icon>
+                <ion-icon name="star" style="margin-bottom: 0px; color: #FFC90C"></ion-icon>
+                <ion-icon name="star" style="margin-bottom: 0px; color: #FFC90C"></ion-icon>
+                <ion-icon name="star" style="margin-right: -10px; margin-bottom: 0px; color: #FFC90C"></ion-icon>
+              </ion-col>
+
+              <ion-col size="4">
+                <ion-text>
+                  <h6 style="font-weight: bold; font-size: 85%; color: #57B709; margin-left: -1px; margin-right: -20px; margin-top: 1px; margin-bottom: 0px;">5,99€</h6>
+                </ion-text>
+              </ion-col>
+            </ion-row>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="6">
+        <ion-card style="margin-left: -1px; margin-right: -1px; margin-top: 10px; margin-bottom: -10px;">
+          <img src="https://images.unsplash.com/photo-1626082896492-766af4eb6501?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80">
+          
+          <ion-card-header style="margin-bottom: -15px;">
+            <ion-text>
+              <h6 style="font-weight: bold; font-size: 100%; color: #000000; margin-left: -10px; margin-right: -10px; margin-top: -10px; margin-bottom: -10px;">Franguinho Frito</h6>
+            </ion-text>
+
+            <ion-text>
+              <h6 style="font-weight: lighter; font-size: 90%; color: #A1A1A1; margin-left: -10px; margin-right: -10px; margin-top: 15px; margin-bottom: -1px;">KFC</h6>
+            </ion-text>
+
+            <ion-row>
+              <ion-col size="8">
+                <ion-icon name="star" style="margin-left: -15px; margin-bottom: 0px; color: #FFC90C"></ion-icon>
+                <ion-icon name="star" style="margin-bottom: 0px;"></ion-icon>
+                <ion-icon name="star" style="margin-bottom: 0px;"></ion-icon>
+                <ion-icon name="star" style="margin-bottom: 0px;"></ion-icon>
+                <ion-icon name="star" style="margin-right: -10px; margin-bottom: 0px;"></ion-icon>
+              </ion-col>
+
+              <ion-col size="4">
+                <ion-text>
+                  <h6 style="font-weight: bold; font-size: 85%; color: #57B709; margin-left: -1px; margin-right: -20px; margin-top: 1px; margin-bottom: 0px;">2,00€</h6>
+                </ion-text>
+              </ion-col>
+            </ion-row>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="6">
+        <ion-card style="margin-left: -1px; margin-right: -1px; margin-top: 10px; margin-bottom: -10px;">
+          <img src="https://images.unsplash.com/photo-1619901282828-7cbde1c89884?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=820&q=80">
+          
+          <ion-card-header style="margin-bottom: -15px;">
+            <ion-text>
+              <h6 style="font-weight: bold; font-size: 100%; color: #000000; margin-left: -10px; margin-right: -10px; margin-top: -10px; margin-bottom: -10px;">Double CheeseBurger</h6>
+            </ion-text>
+
+            <ion-text>
+              <h6 style="font-weight: lighter; font-size: 90%; color: #A1A1A1; margin-left: -10px; margin-right: -10px; margin-top: 15px; margin-bottom: -1px;">McDonald's</h6>
+            </ion-text>
+
+            <ion-row>
+              <ion-col size="8">
+                <ion-icon name="star" style="margin-left: -15px; margin-bottom: 0px; color: #FFC90C"></ion-icon>
+                <ion-icon name="star" style="margin-bottom: 0px; color: #FFC90C"></ion-icon>
+                <ion-icon name="star" style="margin-bottom: 0px; color: #FFC90C"></ion-icon>
+                <ion-icon name="star" style="margin-bottom: 0px; color: #FFC90C"></ion-icon>
+                <ion-icon name="star" style="margin-right: -10px; margin-bottom: 0px; color: #FFC90C"></ion-icon>
+              </ion-col>
+
+              <ion-col size="4">
+                <ion-text>
+                  <h6 style="font-weight: bold; font-size: 85%; color: #57B709; margin-left: -1px; margin-right: -20px; margin-top: 1px; margin-bottom: 0px;">1,50€</h6>
+                </ion-text>
+              </ion-col>
+            </ion-row>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- TITLE "OS CLIENTES RECOMENDAM" -->
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <ion-text>
+          <h6 style="font-weight: bold; margin-top: 15px;">Os clientes recomendam</h6>
+        </ion-text>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- REVIEWS -->
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <ion-card style="margin-left: -1px; margin-right: -1px; margin-top: -20px; margin-bottom: -10px;" color="primary">
+          <ion-card-header>
+            <ion-row>
+              <ion-col size="6">
+                <ion-text>
+                  <h6 style="font-weight: bold; font-size: 100%; color: #FFFFFF; margin-left: -10px; margin-right: -10px; margin-top: -10px; margin-bottom: -10px;">Alice Dias</h6>
+                </ion-text>
+              </ion-col>
+
+              <ion-col size="6">
+                <ion-text>
+                  <h6 class="ion-float-end" style="font-weight: lighter; font-size: 90%; color: #FFFFFF; margin-left: -10px; margin-right: -5px; margin-top: -8px; margin-bottom: -10px;">Double CheeseBurger</h6>
+                </ion-text>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col size="12">
+                <ion-icon name="star" style="margin-left: -10px; color: #FFC90C;"></ion-icon>
+                <ion-icon name="star" style="color: #FFC90C;"></ion-icon>
+                <ion-icon name="star" style="color: #FFC90C;"></ion-icon>
+                <ion-icon name="star" style="color: #FFC90C;"></ion-icon>
+                <ion-icon name="star" style="margin-right: -5px; color: #FFC90C;"></ion-icon>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-text>
+                <h6 style="font-weight: lighter; font-size: 90%; color: #FFFFFF; margin-left: -5px; margin-right: -5px; margin-top: 5px; margin-bottom: -10px;">O Double CheeseBurger estava delicioso!</h6>
+              </ion-text>
+            </ion-row>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="12">
+        <ion-card style="margin-left: -1px; margin-right: -1px; margin-top: 10px; margin-bottom: -10px;" color="primary">
+          <ion-card-header>
+            <ion-row>
+              <ion-col size="6">
+                <ion-text>
+                  <h6 style="font-weight: bold; font-size: 100%; color: #FFFFFF; margin-left: -10px; margin-right: -10px; margin-top: -10px; margin-bottom: -10px;">Bruno Pinheiro</h6>
+                </ion-text>
+              </ion-col>
+
+              <ion-col size="6">
+                <ion-text>
+                  <h6 class="ion-float-end" style="font-weight: lighter; font-size: 90%; color: #FFFFFF; margin-left: -10px; margin-right: -5px; margin-top: -8px; margin-bottom: -10px;">SteakHouse</h6>
+                </ion-text>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col size="12">
+                <ion-icon name="star" style="margin-left: -10px; color: #FFC90C;"></ion-icon>
+                <ion-icon name="star" style="color: #FFC90C;"></ion-icon>
+                <ion-icon name="star" style="color: #FFC90C;"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star" style="margin-right: -5px;"></ion-icon>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-text>
+                <h6 style="font-weight: lighter; font-size: 90%; color: #FFFFFF; margin-left: -5px; margin-right: -5px; margin-top: 5px; margin-bottom: -10px;">O SteakHouse estava delicioso, mas é demasiado pequeno para mim.</h6>
+              </ion-text>
+            </ion-row>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="12">
+        <ion-card style="margin-left: -1px; margin-right: -1px; margin-top: 10px; margin-bottom: -10px;" color="primary">
+          <ion-card-header>
+            <ion-row>
+              <ion-col size="6">
+                <ion-text>
+                  <h6 style="font-weight: bold; font-size: 100%; color: #FFFFFF; margin-left: -10px; margin-right: -10px; margin-top: -10px; margin-bottom: -10px;">Francisco Guimarães</h6>
+                </ion-text>
+              </ion-col>
+
+              <ion-col size="6">
+                <ion-text>
+                  <h6 class="ion-float-end" style="font-weight: lighter; font-size: 90%; color: #FFFFFF; margin-left: -10px; margin-right: -5px; margin-top: -8px; margin-bottom: -10px;">Pizza Crocante</h6>
+                </ion-text>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col size="12">
+                <ion-icon name="star" style="margin-left: -10px; color: #FFC90C;"></ion-icon>
+                <ion-icon name="star" style="color: #FFC90C;"></ion-icon>
+                <ion-icon name="star" style="color: #FFC90C;"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star" style="margin-right: -5px;"></ion-icon>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-text>
+                <h6 style="font-weight: lighter; font-size: 90%; color: #FFFFFF; margin-left: -5px; margin-right: -5px; margin-top: 5px; margin-bottom: -10px;">A Pizza Crocante estava deliciosa, pena que seja preciso dar um rim para pagá-la.</h6>
+              </ion-text>
+            </ion-row>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="12">
+        <ion-card style="margin-left: -1px; margin-right: -1px; margin-top: 10px; margin-bottom: 10px;" color="primary">
+          <ion-card-header>
+            <ion-row>
+              <ion-col size="6">
+                <ion-text>
+                  <h6 style="font-weight: bold; font-size: 100%; color: #FFFFFF; margin-left: -10px; margin-right: -10px; margin-top: -10px; margin-bottom: -10px;">Matilde Dias</h6>
+                </ion-text>
+              </ion-col>
+
+              <ion-col size="6">
+                <ion-text>
+                  <h6 class="ion-float-end" style="font-weight: lighter; font-size: 90%; color: #FFFFFF; margin-left: -10px; margin-right: -5px; margin-top: -8px; margin-bottom: -10px;">Double CheeseBurger</h6>
+                </ion-text>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col size="12">
+                <ion-icon name="star" style="margin-left: -10px; color: #FFC90C;"></ion-icon>
+                <ion-icon name="star" style="color: #FFC90C;"></ion-icon>
+                <ion-icon name="star" style="color: #FFC90C;"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star" style="margin-right: -5px;"></ion-icon>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-text>
+                <h6 style="font-weight: lighter; font-size: 90%; color: #FFFFFF; margin-left: -5px; margin-right: -5px; margin-top: 5px; margin-bottom: -10px;">O Double CheeseBurger estava delicioso, mas quando chego a casa continuo com fome.</h6>
+              </ion-text>
+            </ion-row>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

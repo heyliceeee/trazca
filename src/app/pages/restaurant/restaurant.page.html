@@ -1,0 +1,260 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="end">
+      <ion-icon name="star"></ion-icon>
+      <ion-button>Favoritar</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- CARD RESTAURANT INFO -->
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <!-- CARD -->
+        <ion-card style="background-color: #57B709;">
+          <ion-row>
+            <ion-col size="4">
+              <img src="https://logospng.org/download/burger-king/logo-burger-king-256.png">
+            </ion-col>
+
+            <ion-col size="8">
+              <ion-text class="ion-text-start">
+                <h4 style="color: #323232; font-weight: bold; margin: 5px; margin-top: 3px;">Burger King</h4>
+              </ion-text>
+
+              <ion-row>
+                <ion-col size="12" style="margin-top: -3px;">
+                  <ion-icon name="star" style="color: #FFC90C;"></ion-icon>
+                  <ion-icon name="star" style="color: #FFC90C;"></ion-icon>
+                  <ion-icon name="star" style="color: #FFC90C;"></ion-icon>
+                  <ion-icon name="star" style="color: #FFC90C;"></ion-icon>
+                  <ion-icon name="star" style="color: #FFC90C;"></ion-icon>
+                </ion-col>
+              </ion-row>
+
+              <ion-row>
+                <ion-col size="12" style="margin-top: -15px;">
+                  <p style="color: white;">Hambúrger • Frango Frito • Batata Frita • Milkshake • Gelado • Waffle</p>
+                </ion-col>
+              </ion-row>
+            </ion-col>
+          </ion-row>
+
+          <ion-row style="margin-top: -10px;">
+            <ion-col size="6">
+              <ion-row>
+                <ion-col size="6" style="color: white;">
+                  Desde
+                </ion-col>
+
+                <ion-col size="6" style="color: white;">
+                  1,00€
+                </ion-col>
+              </ion-row>
+            </ion-col>
+
+            <ion-col size="6">
+              <ion-row>
+                <ion-col size="2">
+                  <ion-icon name="location-outline" style="color: white;"></ion-icon>
+                </ion-col>
+
+                <ion-col size="10" style="color: white; margin-left: -5px;">
+                  6,4 KM
+                </ion-col>
+              </ion-row>
+            </ion-col>
+          </ion-row>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- DESCRIPTION -->
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <ion-text class="ion-text-start">
+          <p style="color: #A1A1A1; font-size: 14px; margin-left: 10px; margin-right: 10px; margin-top: -10px;">Sobre o local: Convide a sua família e venha conhecer o melhor restaurante de fast food do MUNDO!</p>
+        </ion-text>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- MENU SLIDER -->
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <ion-segment style="margin-left: 10px; margin-top: -10px;" [(ngModel)]="type" (ionChange)="segmentChanged($event)">
+          <ion-segment-button value="menu" checked>
+            <ion-label>Menu</ion-label>
+          </ion-segment-button>
+
+          <ion-segment-button value="comments">
+            <ion-label>Comentários</ion-label>
+          </ion-segment-button>
+        </ion-segment>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- LIST MENU -->
+  <div [ngSwitch]="type">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12">
+          <ion-list *ngSwitchCase="'menu'">
+            <ion-item>
+              <ion-thumbnail slot="start">
+                <img src="https://images.unsplash.com/photo-1521305916504-4a1121188589?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" />
+              </ion-thumbnail>
+
+              <ion-text class="ion-text-start">
+                <h6 style="color: #323232; font-weight: bold;">Crispy Chicken</h6>
+              </ion-text>
+
+              <ion-button class="ion-text-end" slot="end" color="primary">+</ion-button>
+            </ion-item>
+
+            <ion-item>
+              <ion-thumbnail slot="start">
+                <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YnVyZ2VyfGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=500&q=60" />
+              </ion-thumbnail>
+
+              <ion-text class="ion-text-start">
+                <h6 style="color: #323232; font-weight: bold;">Big King</h6>
+              </ion-text>
+
+              <ion-button class="ion-text-end" slot="end" color="primary">+</ion-button>
+            </ion-item>
+
+            <ion-item>
+              <ion-thumbnail slot="start">
+                <img src="https://images.unsplash.com/photo-1582196016295-f8c8bd4b3a99?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YnVyZ2VyfGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=500&q=60" />
+              </ion-thumbnail>
+
+              <ion-text class="ion-text-start">
+                <h6 style="color: #323232; font-weight: bold;">Whopper</h6>
+              </ion-text>
+
+              <ion-button class="ion-text-end" slot="end" color="primary">+</ion-button>
+            </ion-item>
+
+            <ion-item>
+              <ion-thumbnail slot="start">
+                <img src="https://images.unsplash.com/photo-1550950158-d0d960dff51b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YnVyZ2VyJTIwc3RlYWtob3VzZXxlbnwwfDJ8MHx8&auto=format&fit=crop&w=400&q=60" />
+              </ion-thumbnail>
+
+              <ion-text class="ion-text-start">
+                <h6 style="color: #323232; font-weight: bold;">SteakHouse</h6>
+              </ion-text>
+
+              <ion-button class="ion-text-end" slot="end" color="primary">+</ion-button>
+            </ion-item>
+
+            <ion-item>
+              <ion-thumbnail slot="start">
+                <img src="https://images.unsplash.com/photo-1551360021-0ff7982d13dc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=910&q=80" />
+              </ion-thumbnail>
+
+              <ion-text class="ion-text-start">
+                <h6 style="color: #323232; font-weight: bold;">Duo Cheddar Bacon</h6>
+              </ion-text>
+
+              <ion-button class="ion-text-end" slot="end" color="primary">+</ion-button>
+            </ion-item>
+
+            <ion-item>
+              <ion-thumbnail slot="start">
+                <img src="https://images.unsplash.com/photo-1559067933-0293effe6133?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YnVyZ2VyJTIwZWdnfGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=500&q=60" />
+              </ion-thumbnail>
+
+              <ion-text class="ion-text-start">
+                <h6 style="color: #323232; font-weight: bold;">The King Ovo</h6>
+              </ion-text>
+
+              <ion-button class="ion-text-end" slot="end" color="primary">+</ion-button>
+            </ion-item>
+          </ion-list>
+
+          <ion-list *ngSwitchCase="'comments'">
+            <ion-card style="margin-top: 0px;" color="primary">
+              <ion-card-header>
+                <ion-row>
+                  <ion-col size="6">
+                    <ion-text>
+                      <h6 style="font-weight: bold; font-size: 100%; color: #FFFFFF; margin-left: -10px; margin-right: -10px; margin-top: -10px; margin-bottom: -10px;">Bruno Pinheiro</h6>
+                    </ion-text>
+                  </ion-col>
+    
+                  <ion-col size="6">
+                    <ion-text>
+                      <h6 class="ion-float-end" style="font-weight: lighter; font-size: 90%; color: #FFFFFF; margin-left: -10px; margin-right: -5px; margin-top: -8px; margin-bottom: -10px;">SteakHouse</h6>
+                    </ion-text>
+                  </ion-col>
+                </ion-row>
+    
+                <ion-row>
+                  <ion-col size="12">
+                    <ion-icon name="star" style="margin-left: -10px; color: #FFC90C;"></ion-icon>
+                    <ion-icon name="star" style="color: #FFC90C;"></ion-icon>
+                    <ion-icon name="star" style="color: #FFC90C;"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star" style="margin-right: -5px;"></ion-icon>
+                  </ion-col>
+                </ion-row>
+    
+                <ion-row>
+                  <ion-text>
+                    <h6 style="font-weight: lighter; font-size: 90%; color: #FFFFFF; margin-left: -5px; margin-right: -5px; margin-top: 5px; margin-bottom: -10px;">O SteakHouse estava delicioso, mas é demasiado pequeno para mim.</h6>
+                  </ion-text>
+                </ion-row>
+              </ion-card-header>
+            </ion-card>
+
+            <ion-card style="margin-top: 0px;" color="primary">
+              <ion-card-header>
+                <ion-row>
+                  <ion-col size="6">
+                    <ion-text>
+                      <h6 style="font-weight: bold; font-size: 100%; color: #FFFFFF; margin-left: -10px; margin-right: -10px; margin-top: -10px; margin-bottom: -10px;">Bruno Pinheiro</h6>
+                    </ion-text>
+                  </ion-col>
+    
+                  <ion-col size="6">
+                    <ion-text>
+                      <h6 class="ion-float-end" style="font-weight: lighter; font-size: 90%; color: #FFFFFF; margin-left: -10px; margin-right: -5px; margin-top: -8px; margin-bottom: -10px;">SteakHouse</h6>
+                    </ion-text>
+                  </ion-col>
+                </ion-row>
+    
+                <ion-row>
+                  <ion-col size="12">
+                    <ion-icon name="star" style="margin-left: -10px; color: #FFC90C;"></ion-icon>
+                    <ion-icon name="star" style="color: #FFC90C;"></ion-icon>
+                    <ion-icon name="star" style="color: #FFC90C;"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star" style="margin-right: -5px;"></ion-icon>
+                  </ion-col>
+                </ion-row>
+    
+                <ion-row>
+                  <ion-text>
+                    <h6 style="font-weight: lighter; font-size: 90%; color: #FFFFFF; margin-left: -5px; margin-right: -5px; margin-top: 5px; margin-bottom: -10px;">O SteakHouse estava delicioso, mas é demasiado pequeno para mim.</h6>
+                  </ion-text>
+                </ion-row>
+              </ion-card-header>
+            </ion-card>
+          </ion-list>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <!-- BUTTON "ADICIONAR AO CARRINHO" -->
+  <ion-button color="primary" expand="block">
+    <ion-icon slot="start" name="cart"></ion-icon>Adicionar ao Carrinho
+  </ion-button>
+</ion-content>
