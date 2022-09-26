@@ -1,3 +1,5 @@
 # Traz Cá
 
-Traz Cá é uma app mobile de pedidos e entrega de alimentos, desenvolvida sobretudo em Ionic e Angular.
+- App mobile de pedidos e entrega de alimentos;
+
+- Desenvolvida sobretudo em Ionic e Angular.
