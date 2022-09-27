@@ -1,3 +1,4 @@
+import { FoodAPIService } from './../../food-api.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePage implements OnInit {
 
-  constructor() { }
+  constructor(private foodService: FoodAPIService) { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.foodService.getBestFood().subscribe(result => {
+      //console.log(result.id);
+      console.log(result);
+    });
+  }
 }

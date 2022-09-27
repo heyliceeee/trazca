@@ -12,7 +12,6 @@ import { HttpClientModule } from '@angular/common/http';
   declarations: [AppComponent],
   imports: [FormsModule, BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule],
   providers: [
-    FoodAPIService, //API
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent],
