@@ -18,7 +18,7 @@ export class HomePage implements OnInit {
 
   async loadFoods(){
     //loading spinner
-    const loading = await this.loadingCtrl.create({
+    /* const loading = await this.loadingCtrl.create({
       message: 'Loading...',
       spinner: 'bubbles'
     });
@@ -26,11 +26,11 @@ export class HomePage implements OnInit {
 
 
     this.foodService.getBestFood().subscribe(res => {
-      loading.dismiss();
+      //loading.dismiss();
 
-      this.foods = res;
+      //this.foods = res;
 
-      console.log(this.foods);
-    });
+      //console.log(this.foods);
+    }); */
   }
 }
